@@ -30,8 +30,10 @@
                             </div>
                             <div class="media-body ml-3">
                                 <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                                <p class="description d-none d-md-inline-block mb-0">Get started with Bootstrap, the
-                                    world's most popular framework for building responsive sites.</p>
+                                <p class="description d-none d-md-inline-block mb-0">
+                                    Get started with Bootstrap, the
+                                    world's most popular framework for building responsive sites.
+                                </p>
                             </div>
                         </a>
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
@@ -60,8 +62,12 @@
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" rel="noopener"
-                       data-toggle="tooltip" title="Like us on Facebook">
+                    <a
+                        class="nav-link nav-link-icon"
+                        href="https://www.facebook.com/creativetim"
+                        target="_blank" rel="noopener"
+                        data-toggle="tooltip" title="Like us on Facebook"
+                    >
                         <i class="fa fa-facebook-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Facebook</span>
                     </a>
@@ -74,26 +80,35 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" rel="noopener"
-                       data-toggle="tooltip" title="Follow us on Twitter">
+                    <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim"
+                        target="_blank" rel="noopener"
+                        data-toggle="tooltip" title="Follow us on Twitter"
+                    >
                         <i class="fa fa-twitter-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Twitter</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/vue-argon-design-system"
-                       target="_blank" rel="noopener" data-toggle="tooltip" title="Star us on Github">
+                    <a
+                        class="nav-link nav-link-icon"
+                        href="https://github.com/creativetimofficial/vue-argon-design-system"
+                        target="_blank" rel="noopener"
+                        data-toggle="tooltip" title="Star us on Github"
+                    >
                         <i class="fa fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
+                    <a
+                        href="#"
+                        target="_blank" rel="noopener"
+                        class="btn btn-neutral btn-icon"
+                    >
                 <span class="btn-inner--icon">
                   <i class="fa fa-cloud-download mr-2"></i>
                 </span>
-                        <span class="nav-link-inner--text">Download</span>
+                        <span class="nav-link-inner--text">Sign Up</span>
                     </a>
                 </li>
             </ul>
@@ -101,9 +116,9 @@
     </header>
 </template>
 <script>
-import BaseNav from "@/components/BaseNav";
-import BaseDropdown from "@/components/BaseDropdown";
-import CloseButton from "@/components/CloseButton";
+import BaseNav from '@/components/ct/BaseNav.vue';
+import BaseDropdown from '@/components/ct/BaseDropdown.vue';
+import CloseButton from '@/components/ct/CloseButton.vue';
 
 export default {
   components: {

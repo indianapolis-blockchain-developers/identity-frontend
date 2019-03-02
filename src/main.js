@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 import App from './App.vue';
-import Argon from "./plugins/argon-kit";
+import Argon from './plugins/argon-kit';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';

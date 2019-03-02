@@ -51,48 +51,48 @@
 <script>
 export default {
   inheritAttrs: false,
-  name: "base-input",
+  name: 'base-input',
   props: {
     required: {
       type: Boolean,
-      description: "Whether input is required (adds an asterix *)"
+      description: 'Whether input is required (adds an asterix *)'
     },
     valid: {
       type: Boolean,
-      description: "Whether is valid",
+      description: 'Whether is valid',
       default: undefined
     },
     alternative: {
       type: Boolean,
-      description: "Whether input is of alternative layout"
+      description: 'Whether input is of alternative layout'
     },
     label: {
       type: String,
-      description: "Input label (text before input)"
+      description: 'Input label (text before input)'
     },
     error: {
       type: String,
-      description: "Input error (below input)"
+      description: 'Input error (below input)'
     },
     labelClasses: {
       type: String,
-      description: "Input label css classes"
+      description: 'Input label css classes'
     },
     inputClasses: {
       type: String,
-      description: "Input css classes"
+      description: 'Input css classes'
     },
     value: {
       type: [String, Number],
-      description: "Input value"
+      description: 'Input value'
     },
     addonRightIcon: {
       type: String,
-      description: "Addon right icon"
+      description: 'Addon right icon'
     },
     addonLeftIcon: {
       type: String,
-      description: "Addont left icon"
+      description: 'Addont left icon'
     }
   },
   data() {
@@ -118,25 +118,25 @@ export default {
     hasIcon() {
       const { addonRight, addonLeft } = this.$slots;
       return (
-        addonRight !== undefined ||
-        addonLeft !== undefined ||
-        this.addonRightIcon !== undefined ||
-        this.addonLeftIcon !== undefined
+        addonRight !== undefined
+        || addonLeft !== undefined
+        || this.addonRightIcon !== undefined
+        || this.addonLeftIcon !== undefined
       );
     }
   },
   methods: {
     updateValue(evt) {
-      let value = evt.target.value;
-      this.$emit("input", value);
+      const { value } = evt.target;
+      this.$emit('input', value);
     },
     onFocus(value) {
       this.focused = true;
-      this.$emit("focus", value);
+      this.$emit('focus', value);
     },
     onBlur(value) {
       this.focused = false;
-      this.$emit("blur", value);
+      this.$emit('blur', value);
     }
   }
 };

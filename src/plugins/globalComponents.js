@@ -1,15 +1,15 @@
-import Badge from "../components/Badge";
-import BaseAlert from "../components/BaseAlert";
-import BaseButton from "../components/BaseButton";
-import BaseCheckbox from "../components/BaseCheckbox";
-import BaseInput from "../components/BaseInput";
-import BasePagination from "../components/BasePagination";
-import BaseProgress from "../components/BaseProgress";
-import BaseRadio from "../components/BaseRadio";
-import BaseSlider from "../components/BaseSlider";
-import BaseSwitch from "../components/BaseSwitch";
-import Card from "../components/Card";
-import Icon from "../components/Icon";
+import Badge from '../components/ct/Badge.vue';
+import BaseAlert from '../components/ct/BaseAlert.vue';
+import BaseButton from '../components/ct/BaseButton.vue';
+import BaseCheckbox from '../components/ct/BaseCheckbox.vue';
+import BaseInput from '../components/ct/BaseInput.vue';
+import BasePagination from '../components/ct/BasePagination.vue';
+import BaseProgress from '../components/ct/BaseProgress.vue';
+import BaseRadio from '../components/ct/BaseRadio.vue';
+import BaseSlider from '../components/ct/BaseSlider.vue';
+import BaseSwitch from '../components/ct/BaseSwitch.vue';
+import Card from '../components/ct/Card.vue';
+import Icon from '../components/ct/Icon.vue';
 
 export default {
   install(Vue) {
