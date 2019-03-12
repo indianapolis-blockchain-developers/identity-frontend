@@ -1,23 +1,5 @@
 <template>
     <footer class="footer has-cards">
-        <div class="container container-lg">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <router-link to="/landing" title="Landing Page">
-                            <img v-lazy="'img/theme/landing.jpg'" class="card-img">
-                        </router-link>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-5 mb-lg-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <router-link to="/profile" title="Profile Page">
-                            <img v-lazy="'img/theme/profile.jpg'" class="card-img">
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6">
@@ -28,6 +10,7 @@
                         Let's get in touch on any of these platforms.
                     </h4>
                 </div>
+                <!-- TODO: add minds here -->
                 <div class="col-lg-6 text-lg-center btn-wrapper">
                     <a target="_blank" rel="noopener" href="#"
                        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg"
@@ -60,19 +43,17 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy; {{year}}
-                        <a href="#" target="_blank" rel="noopener">Creative Tim</a>.
+                        <a href="#" target="_blank" rel="noopener">
+                            Indianapolis Blockchain Developers
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
                             <a href="#" class="nav-link" target="_blank" rel="noopener">
-                                Creative Tim
+                                About Us
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" target="_blank" rel="noopener">About
-                                Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" target="_blank" rel="noopener">Blog</a>

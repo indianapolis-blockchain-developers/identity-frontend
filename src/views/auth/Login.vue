@@ -65,9 +65,9 @@
               </a>
             </div>
             <div class="col-6 text-right">
-              <a href="#" class="text-light">
+              <router-link to="register" class="text-light">
                 <small>Create new account</small>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -78,5 +78,3 @@
 <script>
 export default {};
 </script>
-<style>
-</style>

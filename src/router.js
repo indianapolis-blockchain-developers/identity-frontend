@@ -1,12 +1,23 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+
 import AppHeader from '@/layout/AppHeader.vue';
+import AuthHeader from '@/layout/AuthHeader.vue';
 import AppFooter from '@/layout/AppFooter.vue';
+// import AuthFooter from '@/layout/AuthFooter.vue';
 
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
+import Roadmap from '@/views/Roadmap.vue';
+import Features from '@/views/Features.vue';
 import Login from '@/views/auth/Login.vue';
 import Register from '@/views/auth/Register.vue';
+
+import Profile from '@/views/Profile.vue';
+import Settings from '@/views/Settings.vue';
+import Relationships from '@/views/Relationships.vue';
+import Credentials from '@/views/Credentials.vue';
+import Messages from '@/views/Messages.vue';
 
 Vue.use(Router);
 
@@ -32,6 +43,24 @@ export default new Router({
       }
     },
     {
+      path: '/roadmap',
+      name: 'roadmap',
+      components: {
+        header: AppHeader,
+        default: Roadmap,
+        footer: AppFooter
+      }
+    },
+    {
+      path: '/features',
+      name: 'features',
+      components: {
+        header: AppHeader,
+        default: Features,
+        footer: AppFooter
+      }
+    },
+    {
       path: '/login',
       name: 'login',
       components: {
@@ -53,8 +82,8 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       components: {
-        header: AppHeader,
-        default: Home,
+        header: AuthHeader,
+        default: Profile,
         footer: AppFooter
       }
     },
@@ -62,8 +91,8 @@ export default new Router({
       path: '/settings',
       name: 'settings',
       components: {
-        header: AppHeader,
-        default: Home,
+        header: AuthHeader,
+        default: Settings,
         footer: AppFooter
       }
     },
@@ -71,8 +100,8 @@ export default new Router({
       path: '/relationships',
       name: 'relationships',
       components: {
-        header: AppHeader,
-        default: Home,
+        header: AuthHeader,
+        default: Relationships,
         footer: AppFooter
       }
     },
@@ -80,8 +109,8 @@ export default new Router({
       path: '/credentials',
       name: 'credentials',
       components: {
-        header: AppHeader,
-        default: Home,
+        header: AuthHeader,
+        default: Credentials,
         footer: AppFooter
       }
     },
@@ -89,8 +118,8 @@ export default new Router({
       path: '/messages',
       name: 'messages',
       components: {
-        header: AppHeader,
-        default: Home,
+        header: AuthHeader,
+        default: Messages,
         footer: AppFooter
       }
     },
