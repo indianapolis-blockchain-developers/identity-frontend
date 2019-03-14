@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="position-relative">
-      <!-- shape Hero -->
       <section class="section-shaped my-0">
         <div class="shape shape-style-1 shape-default shape-skew">
           <span></span>

@@ -53,7 +53,11 @@
                 Remember me
             </base-checkbox>
             <div class="text-center">
-                <base-button type="primary" class="my-4">Sign In</base-button>
+              <router-link to="profile">
+                <base-button type="primary" class="my-4">
+                  Sign In
+                </base-button>
+              </router-link>
             </div>
           </form>
         </template>

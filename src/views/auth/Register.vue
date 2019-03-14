@@ -65,7 +65,11 @@
                   </span>
                 </base-checkbox>
                 <div class="text-center">
-                  <base-button type="primary" class="my-4">Create account</base-button>
+                  <router-link to="profile">
+                    <base-button type="primary" class="my-4">
+                      Create account
+                    </base-button>
+                  </router-link>
                 </div>
               </form>
             </template>
